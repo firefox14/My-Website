@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<!--Links For Fonts And CSS-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Cantarell|Overpass+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<!--Makes Website Responsive-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Learn To Make A Website!</title>
+</head>
+<body>
+	
+	<header>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">Tutorials</a>
+  <a href="#">References</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">JavaScript</a>
+    </div>
+  </div>
+  <a href="editor.html">Editor</a>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+	</header>
+	<main>
+		<h1 class="title">The Basics</h1>
+
+		<p>This is the section where I will teach you the basics of how to make a website.</p>
+		<p>The first things that you'll need to do is open a application for editing text. For Windows you can use Notepad, and for Mac you can use TextEdit. There are plenty of applications you can download that are specifically for coding, my favorite is called Sublime Text.</p>
+	</main>
+
+</body>
+</html>
