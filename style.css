@@ -1,3 +1,7 @@
+* {
+    max-width: 100%;
+}
+
 body {
 background: #aaa;
 }
@@ -17,6 +21,7 @@ main {
 	height: 5000px;
 	width: 850px;
 	background-color: white;
+    color: #000;
 	z-index: -9
 	position: relative;
     top: 45px;
